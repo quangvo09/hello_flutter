@@ -1,4 +1,4 @@
-name: Build android
+name: Build and upload file to app distribution
 
 on:
   push:
