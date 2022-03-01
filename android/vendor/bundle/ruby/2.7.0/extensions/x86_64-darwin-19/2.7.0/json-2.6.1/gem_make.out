@@ -1,0 +1,13 @@
+current directory: /Users/onpoint/Flutter Applications/hello_flutter/android/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+/Users/onpoint/.rvm/rubies/ruby-2.7.1/bin/ruby -I /Users/onpoint/.rvm/rubies/ruby-2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220228-65967-240wro.rb extconf.rb
+creating Makefile
+
+current directory: /Users/onpoint/Flutter Applications/hello_flutter/android/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make DESTDIR\= clean
+
+current directory: /Users/onpoint/Flutter Applications/hello_flutter/android/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make DESTDIR\=
+make: Nothing to be done for `all'.
+
+current directory: /Users/onpoint/Flutter Applications/hello_flutter/android/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make DESTDIR\= install
