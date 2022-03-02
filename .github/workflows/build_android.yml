@@ -62,6 +62,9 @@ jobs:
         run: flutter pub get
       - name: Build the APK
         run: flutter build apk --release
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.7.1"
       - name: Install bundle
         run: bundle install --path vendor/bundle
       - name: Run Fastlane
