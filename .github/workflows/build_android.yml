@@ -62,6 +62,8 @@ jobs:
         run: flutter pub get
       - name: Build the APK
         run: flutter build apk --release
+      - name: Install bundle
+        run: bundle install --path vendor/bundle
       - name: Run Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
