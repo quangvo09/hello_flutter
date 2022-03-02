@@ -65,8 +65,6 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: "2.6"
-      - name: Install bundle
-        run: bundle install --path vendor/bundle
       - name: Run Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
