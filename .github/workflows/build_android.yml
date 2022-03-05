@@ -46,6 +46,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ">= 2.7.2"
+          bundler-cache: true
       - name: Setup Java
         uses: actions/setup-java@v1
         with:
@@ -62,11 +66,8 @@ jobs:
         run: flutter pub get
       - name: Build the APK
         run: flutter build apk --release
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: "2.7"
       - name: Run Fastlane
-        uses: maierj/fastlane-action@v1.4.0
+        uses: maierj/fastlane-action@v2.0.0
         with:
           lane: android_beta_app
           subdirectory: android
